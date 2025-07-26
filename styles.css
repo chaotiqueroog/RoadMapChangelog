@@ -1,0 +1,85 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(6, 67, 78);
+    color: aliceblue;
+    transition: all 1s ease;
+}
+.header {
+    text-align: center;
+    margin: 20px 30px 35px 30px
+}
+h1 {
+    margin: 50px auto 20px auto;
+}
+.changelog {
+    margin: auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3px 2fr;
+    border: 3px solid aliceblue;
+    border-radius: 20px;
+    max-width: 50%;
+    transition: all 1s ease;
+}
+.changelog:hover {
+    padding: 45px;
+}
+.item {
+    margin: 30px 20px 0px 20px;
+    vertical-align: middle ;
+    
+}
+.date {
+    text-align: right;
+}
+.changes {
+    text-align: left;
+}
+.middle-bar {
+    background-color: aliceblue;
+    position: relative;
+    align-items: center;
+}
+.middle-point {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 30px 0 0 0;
+    transition: all .4s ease;
+}
+.last-point {
+    bottom: 0;
+}
+@media only screen and (max-device-width:430px) {
+    body {
+        font-size: 0.9em;
+    }
+    .changelog {
+        max-width: 77%;
+        padding: 30px;
+    }
+    .item {
+    margin: 30px 15px 0px 15px;
+    }
+}
+@media only screen and (min-width:0px) {
+    body {
+        font-size: 0.7em;
+    }
+
+}
+@media only screen and (min-width:430px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        font-size: 1em;
+    }
+}
