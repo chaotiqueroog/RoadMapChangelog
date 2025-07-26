@@ -83,3 +83,16 @@ h1 {
         font-size: 1em;
     }
 }
+
+@media (prefers-color-scheme: light) {
+    body {
+        color:rgb(6, 67, 78);
+        background-color: aliceblue;
+    }
+    .changelog {
+        border-color:rgb(6, 67, 78);
+    }
+    .middle-bar, .middle-point {
+        background-color:rgb(6, 67, 78);
+    }
+}
